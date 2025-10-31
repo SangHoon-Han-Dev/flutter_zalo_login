@@ -5,6 +5,10 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            url "https://gitlab.com/api/v4/projects/50747855/packages/maven"
+        }
+
     }
 
     dependencies {
@@ -16,6 +20,10 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url "https://gitlab.com/api/v4/projects/50747855/packages/maven"
+        }
+
     }
 }
 
@@ -35,7 +43,11 @@ android {
 }
 
 dependencies {
-    api "com.zing.zalo.zalosdk:core:2.5.0819"
-    api "com.zing.zalo.zalosdk:auth:2.5.0819"
-    api "com.zing.zalo.zalosdk:openapi:2.5.0819"
+//    api "com.zing.zalo.zalosdk:core:2.5.0819"
+//    api "com.zing.zalo.zalosdk:auth:2.5.0819"
+//    api "com.zing.zalo.zalosdk:openapi:2.5.0819"
+
+    implementation "me.zalo:sdk-core:+"
+    implementation "me.zalo:sdk-auth:+"
+    implementation "me.zalo:sdk-openapi:+"
 }
