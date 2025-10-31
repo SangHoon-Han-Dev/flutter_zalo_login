@@ -22,6 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'com.neun.flutter_zalo_login.flutter_zalo_login'
     compileSdkVersion 28
 
     defaultConfig {
